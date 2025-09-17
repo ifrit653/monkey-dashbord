@@ -1,3 +1,4 @@
+import {Brain} from "lucide-react";
 function ModelTest() {
   return (
 <div className="space-y-6">

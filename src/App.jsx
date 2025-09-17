@@ -11,17 +11,17 @@ import Settings from './pages/Settings';
 function App() {
   return (
     <Router>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Dashboard />} />
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Dashboard />} />
           <Route path="/analytics" element={<Analytics />} />
           <Route path="/model-test" element={<ModelTest />} />
           <Route path="/import-data" element={<ImportData />} />
           <Route path="/survey-creator" element={<SurveyCreator />} />
           <Route path="/manage-data" element={<ManageData />} />
           <Route path="/settings" element={<Settings />} />
-        </Routes>
-      </Layout>
+        </Route>
+      </Routes>
     </Router>
   );
 }
